@@ -1,0 +1,329 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --button-active-color: #188ce8;
+  --logo-primary-color: #2196f3;
+  --logo-secondary-color: #000000;
+  --primary-section-color: #f5f4fa;
+  --background-section-color: #2f303a;
+  --header-border-color: #ececec;
+  --box-border-color: #eeeeee;
+  --primary-font-family: "Roboto", "Verdana", sans-serif;
+  --secondary-font-family: "Raleway", "Tahoma", sans-serif;
+}
+/* ---------------------General styles-------------------- */
+
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-primary-color);
+}
+.edge {
+  padding: 94px 0;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero,
+.footer {
+  background-color: var(--background-section-color);
+}
+.btn {
+  border-radius: 4px;
+  font-family: var(--primary-font-family);
+  cursor: pointer;
+  border: transparent;
+}
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------------------------Reset------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*-----------------------------Header-----------------------------*/
+
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 93px;
+}
+.accent-header {
+  color: var(--logo-secondary-color);
+}
+.main-nav,
+.contact {
+  display: flex;
+  gap: 50px;
+
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.main-nav .link,
+.contact .link {
+  display: block;
+  padding: 32px 0;
+}
+.main-nav .link {
+  color: var(--secondary-text-color);
+}
+.contact .link {
+  color: var(--primary-text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--logo-primary-color);
+}
+.link.current {
+  color: var(--logo-primary-color);
+}
+
+/*----------------Studio------------------*/
+
+/*----------------Hero----------------------*/
+
+.hero {
+  padding: 200px 0;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero .container {
+  width: 696px;
+  padding: 0;
+}
+.hero-title {
+  margin-bottom: 30px;
+
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero .btn {
+  min-width: 216px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--logo-primary-color);
+}
+.hero .btn:hover,
+.hero .btn:focus {
+  background-color: var(--button-active-color);
+}
+
+/* ---------------------Our benefits---------------- */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.benefits-list {
+  display: flex;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+.subtitle {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.benefits .text {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------Our work------------------ */
+.work {
+  padding-bottom: 94px;
+}
+.work .list {
+  display: flex;
+}
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ---------------Our team------------------ */
+
+.team {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-section-color);
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.description {
+  padding: 30px 0;
+}
+.member {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+/* ------------Footer-------------- */
+.footer {
+  padding: 60px 0;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.accent-footer {
+  color: var(--primary-white-color);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.map {
+  color: var(--primary-white-color);
+}
+.comunication {
+  color: var(--secondary-white-color);
+}
+
+/* ----------Page Portfolio-------------- */
+
+/* --------------Button menu------------ */
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.menu-item:not(:last-child) {
+  margin-right: 8px;
+}
+.menu .btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-section-color);
+}
+.menu .btn:hover,
+.menu .btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--logo-primary-color);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects-item {
+  background: var(--primary-white-color);
+}
+
+.card-footer {
+  width: 370px;
+  border-right: 1px solid var(--box-border-color);
+  border-bottom: 1px solid var(--box-border-color);
+  border-left: 1px solid var(--box-border-color);
+  padding: 20px 24px;
+}
+.projects .name {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.projects .text {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
